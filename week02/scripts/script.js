@@ -1,13 +1,29 @@
 const input = document.querySelector("#favchap");
-const button = document.querySelector("favchap");
+const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+button.addEventListener("click", function() {
+    if (input.value.trim() !== '') {
 
-li.textContent = input.value;
-deleteButton.textContent = '❌'
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
+        
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
 
-li.append(deleteButton);
+        li.append(deleteButton);
+        list.append(li);
 
-list.append(li);
+        // Add delete functionality to the button
+        deleteButton.addEventListener('click', function(){
+            list.removeChild(li);
+            input.focus();
+        });
+
+        // Clear the input and refocus
+        input.value = '';
+        input.focus();
+    } else {
+        alert("Please enter a favorite chapter");
+    }
+});
