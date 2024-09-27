@@ -1,8 +1,8 @@
 const input = document.querySelector("#favchap");
-const button = document.querySelector("button");
+const button = document.querySelector("#button");
 const list = document.querySelector("#list");
 
-button.addEventListener("click", function() {
+button.addEventListener('click', function() {
     if (input.value.trim() !== '') {
 
         const li = document.createElement('li');
@@ -14,10 +14,14 @@ button.addEventListener("click", function() {
         li.append(deleteButton);
         list.append(li);
 
+        alert("added")
+
         // Add delete functionality to the button
         deleteButton.addEventListener('click', function(){
             list.removeChild(li);
-            input.focus();
+            
+
+           
         });
 
         // Clear the input and refocus
