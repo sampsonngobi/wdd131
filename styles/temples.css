@@ -45,13 +45,13 @@ header h1{
 }
 
 
-#menu::before{
+#menu::before {
     content: "☰";
-}
-
-#menu.show::before{
-    content: ❎;
-}
+  }
+  
+.show #menu::before {
+    content: "❎";
+  }
 
 nav{
     background-color: black;
@@ -78,8 +78,8 @@ nav{
 }
 
 .nav a:hover{
-    background-color:rgb(202, 165, 236);
-    color: black;
+    background-color:rgb(0, 0, 0);
+    color: rgb(202, 165, 236);
 }
 
 .nav a:active{
@@ -111,12 +111,14 @@ main{
 
 img{
     width: 100%;
+    height: auto;
     margin-top: 1rem;
 }
 
 figcaption{
     text-align: center;
-    font-size: small;
+    font-size: medium;
+    font-weight: 500;
 }
 
 
@@ -124,4 +126,5 @@ footer{
     background-color:rgb(202, 165, 236);
     padding: 1rem;
     text-align: center;
+    font-weight: 500;
 }
