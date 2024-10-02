@@ -111,6 +111,7 @@ main{
 
 img{
     width: 100%;
+    max-width: 300px;
     height: auto;
     margin-top: 1rem;
 }

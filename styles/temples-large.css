@@ -29,6 +29,13 @@
         gap: 10px;
     }
 
+    img{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-top: 1rem;
+    }
+
     header {
         position: relative;
     }
