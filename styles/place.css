@@ -5,19 +5,13 @@
     --secondary-color: green;
     --third-color:rgb(4, 4, 61);
     --text-color:white;
-    
 }
-
-
-
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-
 
 body{
     display: flex;
@@ -28,8 +22,7 @@ body{
     font-weight: 400;
     font-style: normal;
     width: 600;
-    background-color: var(--third-color);
-    
+    background-color: var(--third-color); 
 }
 
 header{
@@ -40,7 +33,6 @@ header{
     padding: 2rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-
 }
 
 picture{
@@ -54,7 +46,6 @@ picture{
     align-items: center;
     margin: 1rem;
     color: var(--text-color);
-   
 }
 
 h2{
@@ -88,12 +79,8 @@ footer p{
     font-weight: bold;
 }
 
-
-
     
 @media (min-width: 640px) {
-
-   
 
     header, footer, h2{
         background-color: var(--secondary-color);
@@ -101,17 +88,14 @@ footer p{
     }
 
     body{
-       width: 100;
+       width: 100%;
        position: relative;
        background-color: var(--third-color);
-      
-
     }
 
 
     .container{
-        position:absolute;
-        
+        position:absolute; 
     }
 
     .hero{
@@ -122,7 +106,6 @@ footer p{
         position: absolute;
         background-color: var(--third-color);
         color: var(--text-color);
-        
     }
 
     .data{
@@ -140,45 +123,34 @@ footer p{
         font-size: 2rem;
         margin-left: 10px;
         position: relative;
-        top: 10px;
-        
+        top: 10px; 
     }
 
     .data-content{
         margin: 1.5rem;
     }
     
-
     picture{
         width: 100%;
         height: auto;
     }
 
-
     footer{
         background-color: var(--secondary-color);
-      
-
     }
 
     h2{
-        padding: .5rem 4rem;
-        
+        padding: .5rem 4rem;  
     }
 
     .data h2 {
         position: relative;
-        right:65px;
-       
+        right:65px; 
     }
     
     .weather h2{
         position: relative;
         right:10px;
     }
-
-   
-
-
 
 }
