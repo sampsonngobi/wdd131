@@ -101,7 +101,7 @@ footer p{
     }
 
     body{
-       width: 100%;
+       width: 100;
        position: relative;
        background-color: var(--third-color);
       
@@ -135,7 +135,7 @@ footer p{
         right: 20px;
     }
 
-    h2.weather::before {
+    h2.weather::after {
         content: '⛅'; 
         font-size: 2rem;
         margin-left: 10px;
