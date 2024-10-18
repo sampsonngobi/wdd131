@@ -4,35 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNC Site Plan</title>
-    <meta name="description" content="The site plan includes the site purpose, the target audience, branding information, and style guide for the course(wdd131) website project.">
+    <meta name="description" content="The site plan includes the site purpose, the target audience, branding information, and style guide for the course(wdd131) website project. The project is a landing page for an artist called SNC">
     <meta name="author" content="Sampson Chinedu Ngobi">
     <link rel="stylesheet" href="styles/site-plan-snc.css">
+    <script src="scripts/site-plan-snc.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <h1>SNC Site Plan </h1>
-        <h3>Sampson Chinedu Ngobi</h3>
+        <h1 class="heading">Landing page / website for SNC</h1>
+        <h3 class="author">Sampson Chinedu Ngobi</h3>
     </header>
     <main>
         <h2>Overview</h2>
         <h3>Purpose</h3>
-        <p>The purpose of this site plan is to establish an online presence for our 
-           whitewater rafting business. By creating this website, we aim to effectively 
-           connect with our customers, providing them with valuable information, adventure packages, 
-           and a seamless booking experience. This website is designed to enhance customer engagement,
-           share our passion for whitewater rafting, and showcase the thrilling experiences we offer,
-           ultimately expanding our reach and creating a strong online community.</p>
+        <p>The purpose of this project is to provide a page where music lovers, 
+            fans and the general public will be able to access information about the 
+            artist SNC, get information about events and and upcoming releases, 
+            buy machandize and also access links to stream 
+            platforms to listen to my original songs and covers. </p>
         <h3>Audience</h3>
-        <p>Our target audience is made up of adventure enthusiasts, nature lovers, and thrill-seekers who are ready
-            to embark on unforgettable whitewater rafting adventures. Whether they are seasoned adventurers or 
-            first-time thrill-seekers, our audience seeks not just a thrilling escapade but a well-curated and safe 
-            journey through exhilarating rapids. This website aims to cater to individuals, families, and groups of all ages, 
-            fostering a community united by the love of adventure and the desire for unique, adrenaline-pumping moments on the water. 
-            Our information is readily accessible on desktops, laptops, and mobile devices, ensuring a seamless and convenient experience 
-            for all our users.</p>
+        <p>
+            This website is build to serve anyone who enjoys listening to music of different genres.
+            It is also for thos who will be discovering me as an artist, who will like to support me
+            through the purchase of machandize, on line streeming and download of my songs. It is also 
+            for anyone who like to book me for shows locally or internationally. 
+        </p>
         <h2>Branding</h2>
         <h3>Website Logo</h3>
-        <img src="images/logo.png" alt="Rafting Site Logo">
+        <img class="logo" src="images/snc-logo.webp" alt="snc Site Logo">
         <h2>Style Guide</h2>
         <h3>Color Palette</h3>
         <p>
@@ -41,16 +45,16 @@
             Hex Code - #000000
             <br>
             2. Secondary
-            Color - Cal poly green
-            Hex Code - #184930
+            Color - white
+            Hex Code - #FFFFFF
             <br>
             3. Accent 1
             Color - Fulvous
             Hex Code - #E08700
             <br>
-            4. Accent 2
-            Color - white
-            Hex Code - #FFFFFF
+            4. accent2-cal poly green :#184930;
+            <br>
+          
             <br>
         <a href="https://coolors.co/000000-184930-e08700-ffffff" target="_blank">https://coolors.co/000000-184930-e08700-ffffff</a>
         </p>
@@ -63,19 +67,18 @@
         <h3>Navigation</h3>
         <nav>
             <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Trips</a>
+            <a href="#">Shows</a>
+            <a href="#">About</a>
             <a href="#">Contact Us</a>
+            <a href="#">machandize</a>
         </nav>
         <h2>Wireframes</h2>
         <h3>Home Page Wireframe</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">
-        <h3>About Us Wireframe</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Page Wireframe Design" width="700">
+        <img src="images/wire-frame.png" alt=" Big Wireframe " width="700">
     </main>
-    <footer>
-        <p>&copy;2024 | Rafting Site Plan | Sampson Chinedu Ngobi | BYU-I WDD130</p>
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> | Sampson Ngobi | Brazil</p>
+        <p id="lastModified">last Modified: <span id="modified-date"></span> </p>
     </footer>
-    
 </body>
 </html>
