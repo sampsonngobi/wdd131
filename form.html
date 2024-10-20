@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "This a product review form which is part of WDD131 week 5 assignments. It demostrates the creation good design using html,css and javascript">
+    <meta name ="author" content ="Sampson Ngobi">
+    <title>Product Review Form </title>
+
+    <!-- fonts from google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <!-- javascript file  -->
+    <script src="scripts/form.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="f1">
+      
+            <label>Product Name
+                <select name="products" id="product-options" required>
+                    <option value="">Choose a product &#9662;</option>
+                </select>
+            </label>
+    
+            <label>Overal rating
+                <label><input type="radio" name="rating" id="rate1" value="1" required>★</label>
+                <label><input type="radio" name="rating" id="rate2" value="2" required>★★</label>
+                <label><input type="radio" name="rating" id="rate3" value="3" required>★★★</label>
+                <label><input type="radio" name="rating" id="rate4" value="4" required>★★★★</label>
+                <label><input type="radio" name="rating" id="rate5" value="5" required>★★★★★</label>
+            </label>
+    
+            <label>Date of Installation <input type="date" name="dateOfInstallation" id="dateOfInstallation" required></label>
+    
+            <label>Which features did you find usufull in the product <span>(check all that apply)</span>
+            <label><input type="checkbox" id="feature" name="feature" value="durability">Durability</label>
+            <label><input type="checkbox" id="feature" name="feature" value="easyToUse">Easy to use </label>
+            <label><input type="checkbox" id="feature" name="feature" value="performance">Performance</label>
+            <label><input type="checkbox" id="feature" name="feature" value="design">Design</label>
+            </label>
+    
+            <label>Written review <span>(optional)</span><input type="textarea" id="review" name="review"></label>
+    
+            <label>Your name <span>(optional)</span><input type="text" id="review" name="review"></label>
+    
+            <input type="submit" value="Send Review">
+    
+            <p class="counter">Number of reviews: <span id="counterNo"></span></p>
+        
+        </form>
+
+    </main>
+   
+<footer class="footer">
+    <p>&copy; <span id="currentyear"></span> | Sampson Ngobi | Brazil</p>
+    <p id="lastModified">last Modified: <span id="modified-date"></span> </p>
+</footer>
+
+    
+</body>
+   
+</html>

@@ -1,0 +1,51 @@
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 800px; /* Wider layout for large screens */
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 10rem;
+    }
+
+    .f1 {
+        padding: 2rem;
+        width: 1000px;
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .f1 label {
+        font-size: 1.2rem;
+    }
+
+    .f1 input[type="text"],
+    .f1 input[type="date"],
+    .f1 select,
+    .f1 input[type="textarea"] {
+        padding: 1rem; /* Increase padding for inputs */
+        font-size: 1.1rem; /* Larger text for better readability */
+        
+    }
+
+    .f1 input[type="radio"],
+    .f1 input[type="checkbox"] {
+        transform: scale(1.2); /* Make the checkboxes and radios larger */
+        margin-right: 10px;
+    }
+
+    header, footer {
+        width: 1000px;
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .footer p {
+        font-size: 1.2rem;
+    }
+
+    .f1 input[type="submit"] {
+        font-size: 1.2rem; /* Increase button font size */
+        padding: 1rem;
+    }
+}
