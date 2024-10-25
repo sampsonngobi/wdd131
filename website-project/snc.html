@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "This a website for the artist call SNC. It the project for WDD131 course at BYU Idaho. It demostrates the creation pf good design using html,css and javascript">
+    <meta name ="author" content ="Sampson Ngobi">
+
+    <!-- fonts from google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/snc-small.css">
+    <link rel="stylesheet" href="styles/snc-large.css">
+
+    <!-- javascript file  -->
+    <script src="scripts/snc.js" defer></script>
+
+    <title>SNC Website</title>
+</head>
+<body> 
+    <header>
+        <div class="header-container-1">
+            <img class="logo" src="images/snc-logo.webp" alt="snc logo">
+            <h1>SNC MUSIC</h1>
+        </div>
+        <div class="header-container-2">
+            <a id="menu" href="#"></a>
+            <div>
+                <nav class="list-container">
+                    <ul class="list">
+                        <li><a href="#"></a>Home</li>
+                        <li><a href="#"></a>Shows</li>
+                        <li><a href="#"></a>About</li>
+                        <li><a href="#"></a>Connect</li>
+                        <li><a href="#"></a>Mach</li>
+                    </ul>
+                </nav>
+
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <h2 class="title">HOME</h2>
+            <div class="home-container">
+                <div class="home-2">
+                    <h3 class="home-2-title">HI LIVE MUSIC</h3>
+                    <H4 class="home-2-sub">OUT NOW</H4>
+                    <!-- this will be a video from youtube -->
+                    <iframe
+                        class="video" 
+                        width="560" height="315" 
+                        src="https://www.youtube.com/embed/v6W1KAbzziw?si=QpZwYd7gig7lGegt&amp;start=2" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                   <div class="home-socials">
+                    <a href="#" target="_blank">
+                        <img src="images/1298766_spotify_music_sound_icon.png" alt="Facebook" class="social-logo">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/5584525_apple_apple music_music_shubhambhatia_thevectorframe_icon.png" alt="Facebook" class="social-logo">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/3225180_app_logo_media_popular_social_icon.png" alt="Facebook" class="social-logo">
+                    </a>
+                   </div>
+                </div>
+            </div>
+            <h2 class="title">SHOWS</h2>
+            <div class ="show">
+                <div>
+                    <img src="https://fakeimg.pl/300x200?text=image" alt="show flyer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iste dolore dolorum, quas tenetur optio reiciendis 
+                        nam porro ut dignissimos itaque velit vel dolor eum 
+                        aperiam illo blanditiis? Laborum, est non.</p>
+                </div>
+                <div>
+                    <img src="https://fakeimg.pl/300x200?text=image" alt="show flyer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iste dolore dolorum, quas tenetur optio reiciendis 
+                        nam porro ut dignissimos itaque velit vel dolor eum 
+                        aperiam illo blanditiis? Laborum, est non.</p>
+                </div>
+                <div>
+                    <img src="https://fakeimg.pl/300x200?text=image" alt="show flyer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iste dolore dolorum, quas tenetur optio reiciendis 
+                        nam porro ut dignissimos itaque velit vel dolor eum 
+                        aperiam illo blanditiis? Laborum, est non.</p>
+                </div>
+                <input class="Calender" type="date" value="View Calender">
+            </div>
+            <h2 class="title">ABOUT</h2>
+            <div class="about">
+                <div>
+                    <img src="https://fakeimg.pl/300x200/5b92bf/ffffff?text=image" alt="artist image">
+                    <p>Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Saepe doloremque commodi 
+                        cumque iste odio architecto labore facilis esse 
+                        veniam reprehenderit, consectetur obcaecati 
+                        incidunt provident consequatur optio porro 
+                        nam, quia deleniti.
+                    </p>
+                </div>
+                <div>
+                    <div>
+                        <h5>Be the first to get our releases and show dates</h5>
+                        <form action="#" method="get" class="f1">
+                            <label class="label">Name*:<input type="text" id="name" name="name" required></label>
+                            <label class="label">Email*:<input type="email" id="email" name="email" required></label>
+                            <input type="submit" value="subscribe">
+                        </form>
+                    </div>
+                    <div class="tracks">
+                        <h5>Tracks</h5>
+                        <ul>
+                            <li>Freinds Come And Go </li>
+                            <li>HAVE ME BACK</li>
+                            <li>I’LL NEVER FIND ANOTHER U</li>
+                            <li>NEVER TOO LATE</li>
+                            <li>TENTATIVA</li>
+                            <li>TOTORI</li>
+                            <li>HI LIVE MUSIZ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">CONNECT</h2>
+
+            <div class="connect">
+                <h5>For bookings and enquiries</h5>
+                <p>snc19music@gmail.com</p>
+                <p>+5561995870614</p>
+                <div>
+                    <a href="#" target="_blank">
+                        <img src="images/9023675_instagram_logo_fill_icon.png" alt="Facebook" class="social-logo">
+                    </a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">
+                        <img src="images/104498_facebook_icon.png" alt="Facebook" class="social-logo">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/9023840_tiktok_logo_fill_icon.png" alt="Facebook" class="social-logo">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/11053969_x_logo_twitter_new_brand_icon.png" alt="Facebook" class="social-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Sampson Ngobi | Brazil</p>
+        <p id="lastModified">last Modified: <span id="modified-date"></span> </p>
+    </footer>
+</body>
+</html>
