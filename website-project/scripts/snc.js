@@ -1,4 +1,4 @@
-const mainnav = document.querySelector('list');
+const mainnav = document.querySelector('.list');
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () =>{
