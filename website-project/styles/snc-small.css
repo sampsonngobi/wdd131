@@ -128,13 +128,16 @@ main{
 }
 
 .home-2{
-background-image: url('https://fakeimg.pl/600x500/0e0f0f/0d0c0c');
-color: var(--secondary-color);
+background-image: url('/website-project/images/hero-small.webp');
+background-size: cover;
+max-width: 600px;
+
 }
 
 .home-2-title, .home-2-sub{
     padding: 1rem;
     margin-bottom: 1rem;
+    
 }
 
 .home-socials{
@@ -152,11 +155,15 @@ color: var(--secondary-color);
 
 .show img {
     margin: 1rem;
+    width: 300px;
+    height: auto;
 }
 
 .show p{
     font-size: 1rem;
     font-weight: 400;
+    padding: 1rem;
+    margin: .5rem;
 }
 
 .Calender{
@@ -185,6 +192,26 @@ color: var(--secondary-color);
     font-weight: 400;
     margin: 1rem;
 }
+
+.calender{
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.calender:hover{
+    background-color: var(--accent2-color);
+}
+
+.calender:focus {
+    outline: 2px solid var(--accent2-color);
+}
+
 
 .f1{
     display: flex;

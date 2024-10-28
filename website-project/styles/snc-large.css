@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --accent1-color:#E08700;
+    --accent2-color:#184930;
+
+    --heading-font: 'Rubik', sans-serif;
+    --paragraph-font:'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    body {
+        max-width: 100%; /* Limits the width of your content */
+        margin: 0, auto; /* Centers the content */
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Make headings larger */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+
+
+    header {
+        padding: 2rem 4rem; /* Add extra padding to give more breathing room */
+    }
+    
+    .header-container-1 {
+        gap: 3rem; /* Space out elements inside the header */
+    }
+
+    .logo {
+        max-width: 150px; /* Slightly larger logo on bigger screens */
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .list{
+        position: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-weight: 500;
+    }
+    .list a:hover{
+        background-color: var(--accent1-color);
+    }
+
+    .list a:active{
+        background-color: var(--accent2-color);
+    }
+
+   
+
+    .home-2{
+        background-image: url('/website-project/images/hero-large.webp');
+        background-size: cover;
+        min-width: 100%; 
+        
+        }
+
+    .video{
+        max-width: 50%;
+    }
+
+    .show{
+        display:flex;
+    }
+
+    .about-info{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .about-info p{
+        margin: 0 1rem;
+        padding: 2rem;
+    }
+
+    .form-track{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin: 1rem;
+    }
+
+
+}
