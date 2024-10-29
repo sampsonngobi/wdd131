@@ -37,7 +37,8 @@
     .video {
         /* Adjust the size of the video to fit landscape */
         width: 100%;
-        height: auto;
+        margin-top: 10rem;
+      
     }
 
     /* Adjust the footer for landscape */

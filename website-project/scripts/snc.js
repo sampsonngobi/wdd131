@@ -18,29 +18,41 @@ function updatefooter(){
     document.querySelector('#modified-date').innerHTML = lastModified;
 };
 
-// Function to handle form submission
-function handleFormSubmit(event) {
-    event.preventDefault(); // Prevent page refresh
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
 
-    // Check if both fields are filled
-    if (name && email) {
-        const subscribers = JSON.parse(localStorage.getItem('subscribers')) || []; // Get existing subscribers from localStorage
-        const newSubscriber = { name, email };
+
+const calenderButoon = document.getElementById('button');
+const calendarIframe = document.querySelector('.calender')
+
+calenderButoon.addEventListener('click', () =>{
+    calendarIframe.classList.toggle('show');
+
+})
+
+    
+
+// Function to handle form submission
+// function handleFormSubmit(event) {
+//     event.preventDefault(); // Prevent page refresh
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+
+//     // Check if both fields are filled
+//     if (name && email) {
+//         const subscribers = JSON.parse(localStorage.getItem('subscribers')) || []; // Get existing subscribers from localStorage
+//         const newSubscriber = { name, email };
         
-        subscribers.push(newSubscriber); // Add new subscriber to the array
-        localStorage.setItem('subscribers', JSON.stringify(subscribers)); // Save updated subscribers array
+//         subscribers.push(newSubscriber); // Add new subscriber to the array
+//         localStorage.setItem('subscribers', JSON.stringify(subscribers)); // Save updated subscribers array
         
-        alert(`Thank you for subscribing, ${name}!`);
+//         alert(`Thank you for subscribing, ${name}!`);
         
-        // Clear form fields
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-    } else {
-        alert('Please fill in all fields!');
-    }
-}
+//         // Clear form fields
+//         document.getElementById('name').value = '';
+//         document.getElementById('email').value = '';
+//     } else {
+//         alert('Please fill in all fields!');
+//     }
+// }
 
 
 // function showCalender() {
