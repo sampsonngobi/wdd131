@@ -1,0 +1,102 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --accent1-color:#E08700;
+    --accent2-color:#184930;
+
+    --heading-font: 'Rubik', sans-serif;
+    --paragraph-font:'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+main{
+    background-color: var(--accent1-color);
+    width: 100%;
+    height: 400px;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, .main-p{
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+@media (orientation: landscape) {
+    body{
+        width: 600px;
+    }
+
+    main{
+        width: 600px;
+        padding: 2rem;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    header, footer{
+        width: 600px;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body{
+        min-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        min-width: 1000px;
+        margin: 0 auto;
+    }
+
+}
+
+ @media (min-width: 1440px) {
+        body{
+            min-width: 1440px;
+            margin: 0 auto;
+        }
+
+        main, header, footer{
+            width: 100%;
+        }
+
+
+
+}

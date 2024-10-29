@@ -188,11 +188,14 @@ max-width: 600px;
     margin: 1rem;
 }
 
-.calender-container{
-    display: block;
+.about-info{
+    max-width:70% ;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
 }
+
 
 .button{
     background-color: var(--accent1-color);
@@ -216,6 +219,7 @@ max-width: 600px;
 
 .calender{
  display: none;
+ align-self: center;
 
 }
 
